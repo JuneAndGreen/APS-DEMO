@@ -1,0 +1,13 @@
+{
+    "message": "2IIM0i9RN",
+    "code": "200",
+    "result": {
+        "access": "1",
+        "comment": "0",
+        "leave": "1",
+        "shortMsg": "0",
+        "verification": true,
+        "quote": false,
+        "frame": true
+    }
+}

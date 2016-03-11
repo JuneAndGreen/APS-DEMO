@@ -1,0 +1,9 @@
+{
+    "id": "11356",
+    "proRoot": "./",
+    "updateTime": 1457701275686,
+    "template": "webapp",
+    "webRoot": "./src/main/webapp/",
+    "viewRoot": "./src/main/webapp/WEB-INF/views/",
+    "engine": "freemarker"
+}
