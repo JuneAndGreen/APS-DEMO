@@ -8,9 +8,11 @@ module.exports = {
     "POST /api/blog/delete":u.p(15274,"post/api/blog/delete"),
     "GET /api/blog/list":u.p(15273,"get/api/blog/list"),
     "GET /api/tag/list":u.p(15276,"get/api/tag/list"),
+    "GET /":u.r(0,[{"i":10947,"p":"index"}]),
+    "GET /blog/":u.r(0,[{"i":10947,"p":"index"}]),
     "GET /blog/list/":u.r(0,[{"i":10947,"p":"index"}]),
     "GET /blog/tag/":u.r(0,[{"i":10947,"p":"index"}]),
+    "GET /setting/":u.r(0,[{"i":10947,"p":"index"}]),
     "GET /setting/account/":u.r(0,[{"i":10947,"p":"index"}]),
-    "GET /setting/account/edu/":u.r(0,[{"i":10947,"p":"index"}]),
     "GET /setting/permission/":u.r(0,[{"i":10947,"p":"index"}])
 };
