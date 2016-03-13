@@ -32,6 +32,11 @@ NEJ.define([
         );
     };
 
-
+    /**
+     * 弹窗
+     */
+    p._$modal = function(){
+        alert('目前暂未支持此功能');
+    };
 
 });

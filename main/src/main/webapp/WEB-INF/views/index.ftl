@@ -10,12 +10,10 @@
     <meta name="description" content="页面描述"/>
     <meta name="keywords" content="页面描述"/>
 
+    <!-- @STYLE -->
     <@css/>
     <link href="${csRoot}index.css" rel="stylesheet" type="text/css"/>
 
-    <!-- @STYLE -->
-    <link href="/src/css/template.css" rel="stylesheet" type="text/css"/>
-    <link href="/src/css/app.css" rel="stylesheet" type="text/css"/>
   </head>
   <body id="www-wd-com">
 
@@ -45,7 +43,6 @@
       <textarea name="html" data-src="module/layout/blog/index.html"></textarea>
       <textarea name="html" data-src="module/layout/blog.list/index.html"></textarea>
       <textarea name="html" data-src="module/layout/setting/index.html"></textarea>
-      <textarea name="html" data-src="module/layout/setting.account/index.html"></textarea>
       <textarea name="html" data-src="module/blog/tag/index.html"></textarea>
       <!-- /@TEMPLATE -->
       <!-- @MODULE -->
@@ -54,7 +51,6 @@
       <textarea name="html" data-src="module/blog/list.tag/index.html"></textarea>
       <textarea name="html" data-src="module/blog/list/index.html"></textarea>
       <textarea name="html" data-src="module/setting/tab/index.html"></textarea>
-      <textarea name="html" data-src="module/setting/account.tab/index.html"></textarea>
       <!-- /@MODULE -->
     </div>
     </#noparse>

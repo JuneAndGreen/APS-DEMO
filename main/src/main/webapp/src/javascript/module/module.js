@@ -48,7 +48,10 @@ NEJ.define([
                 if(!url) return;
 
                 window.dispatcher._$redirect(url);
-            } 
+            },
+            modal: function() {
+                Util._$modal();
+            }
         });
     };
     /**

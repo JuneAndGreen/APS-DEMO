@@ -35,34 +35,6 @@ NEJ.define([
             onerror:this.__cbListLoad._$bind(this,_options,_callback,_o)
         });
     };
-    /**
-     * 从缓存中取分类列表
-     */
-    _pro._$getClassListInCache = function(){
-        // for test
-        var _arr = [],
-            _nmb = 0,
-            _seed = +new Date;
-        for(var i=0;i<10;i++){
-            _seed++;
-            _arr.push({id:_seed,name:'class-'+_seed,count:_nmb++});
-        }
-        return _arr;
-    };
-    /**
-     * 从缓存中取标签列表
-     */
-    _pro._$getTagListInCache = function(){
-        // for test
-        var _arr = [],
-            _nmb = 0,
-            _seed = +new Date;
-        for(var i=0;i<20;i++){
-            _seed++;
-            _arr.push({id:_seed,name:'tag-'+_seed,count:_nmb++});
-        }
-        return _arr;
-    };
     
     return _p;    
 });

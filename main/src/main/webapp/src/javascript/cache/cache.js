@@ -27,7 +27,7 @@ NEJ.define([
         var _list = null;
         if (_json.code==200){
             var _result = _json.result;
-            _result.total = _result.length * 4;
+            _result.total = _result.length;
             if (_result.total>_result.length)
                 this._$setTotal(_options.key,_result.total);
             _list = _result;

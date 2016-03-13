@@ -47,6 +47,7 @@ NEJ.define([
             onbeforelistload:this.__onLoadingShow._$bind(this),
             onemptylist:this.__onMessageShow._$bind(this,'没有日志列表！')
         };
+        this.__doDelegate();
     };
     /**
      * 刷新模块

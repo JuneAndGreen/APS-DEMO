@@ -43,6 +43,7 @@ NEJ.define([
             onbeforelistload:this.__onLoadingShow._$bind(this),
             onemptylist:this.__onMessageShow._$bind(this,'没有标签列表！')
         });
+        this.__doDelegate();
     };
     // notify dispatcher
     _t2._$regist('blog-tag',_p._$$ModuleTagList);

@@ -13,7 +13,7 @@ NEJ.define([
     'util/template/jst',
     'util/dispatcher/module',
     'pro/module/module',
-    'pro/cache/blog'
+    'pro/cache/tag'
 ],function(_k,_e,_t0,_t1,_t2,_t3,_m,_d,_p,_o,_f,_r){
     // variable declaration
     var _pro;
@@ -39,15 +39,12 @@ NEJ.define([
         );
         // 0 - class list box
         var _list = _e._$getByClassName(this.__body,'j-flag');
-        this.__cache = _d._$$CacheBlog._$allocate();
-        // - build tag list
-        _t2._$render(
-            _list[0],'jst-4-tag-list',
-            {xlist:this.__cache._$getTagListInCache()}
-        );
-        this.__tbview = _t0._$$TabView._$allocate({
-            list:_e._$getByClassName(_list[0],'j-list')
+        this.__listBox = _list[0];
+        this.__cache = _d._$$CacheTag._$allocate({
+            onlistload: this.__onListLoad._$bind(this)
         });
+        
+        this.__doDelegate();
     };
     /**
      * 刷新模块
@@ -56,7 +53,31 @@ NEJ.define([
      */
     _pro.__onRefresh = function(_options){
         this.__super(_options);
-        this.__tbview._$match(_options.param.tid);
+        this.__tid = _options.param.tid;
+
+        // get tag list
+        this.__cache._$getList({
+            key: 'blog-tag',
+            data: {}
+        });
+    };
+    /**
+     * 获取列表回调
+     * @param  {Object} 配置信息
+     * @return {Void}
+     */
+    _pro.__onListLoad = function() {
+        // - build tag list
+        _t2._$render(
+            this.__listBox,'jst-4-tag-list',
+            {xlist:this.__cache._$getListInCache('blog-tag')}
+        );
+
+        if(this.__tbview) this.__tbview = this.__tbview._$recycle();
+        this.__tbview = _t0._$$TabView._$allocate({
+            list:_e._$getByClassName(this.__listBox,'j-list')
+        });
+        this.__tbview._$match('/blog/?tid=' + this.__tid);
     };
     // notify dispatcher
     _t3._$regist('blog-list-tag',_p._$$ModuleBlogListTag);

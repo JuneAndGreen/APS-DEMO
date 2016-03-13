@@ -14,13 +14,12 @@
   {list beg..end as y}
     {var x=xlist[y]}
     <div class="fl it">
-      <a href="#/blog/?tid=${x.id}">${x.tagName}</a>
-      <span class="sp">(${x.blogCount})</span>
-      <a class="up" href="#">修改</a>
+      <a href="#" data-action="tab" data-id="/blog/?tid=${x.id}">${x.name}</a>
+      <span class="sp">(${x.count})</span>
+      <a class="up" data-action="modal" href="#">修改</a>
     </div>
   {/list}
 </textarea>
 <!-- @TEMPLATE -->
-<textarea name="css" data-src="./index.css"></textarea>
 <textarea name="js"  data-src="./index.js"></textarea>
 <!-- /@TEMPLATE -->
