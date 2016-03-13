@@ -1,25 +1,12 @@
+@import '_config.mcss';
 a{color:#21759B;}
-html{overflow-y:scroll;}
+a:hover{text-decoration:none;}
+html{overflow-y:scroll;color:#2E2E2E;}
 /* clear float */
 .f-xcb{zoom:1;}
 .f-xcb:after{display:block;clear:both;visibility:hidden;height:0;content:".";}
 .f-xcb .fl{float:left;}
 .f-xcb .fr{float:right;}
-/* widget - module */
-.w-mdl .xtl{margin-bottom:15px;font-size:20px;font-weight:normal;text-align:left;}
-/* widget - tab */
-.w-tab{height:24px;line-height:23px;border-bottom:1px solid #bbb;text-align:center;}
-.w-tab .itm{display:block;width:90px;margin-right:-1px;border:1px solid #bbb;color:#21759B;background:#F7F7F7;cursor:pointer;}
-.w-tab .itm:hover{text-decoration:none;}
-.w-tab .itm.js-selected{color:#333;background:#fff;border-bottom-color:#fff;cursor:default;}
-/* right block */
-.w-blk{line-height:20px;padding:10px;margin-bottom:20px;background:#FAFAFA;border:1px solid #F5F5F5;text-align:left;}
-.w-blk .ytl{padding-bottom:5px;color:#7E7E7E;font-weight:bold;}
-.w-blk .ybx .yit{margin-right:8px;}
-.w-blk .ybx .js-selected{background:#ECECEC;}
-
-.w-lyx .lyr{width:200px;margin-left:-200px;}
-.w-lyx .lym{margin-right:200px;padding-right:15px;}
 
 .w-mtb{width:100%;table-layout:fixed;border-collapse:collapse;}
 .w-mtb td{line-height:20px;padding:10px;border-bottom:1px dotted #bbb;vertical-align:top;}
@@ -45,20 +32,43 @@ html{overflow-y:scroll;}
 
 /* 左边导航栏 */
 .m-sidebar{width:200px;margin-right:-200px;text-align:center;}
-.m-sidebar .itm{display:block;height:60px;line-height:60px;color:#21759B;font-size:14px;background:#ECECEC;}
-.m-sidebar .itm.js-selected{background:#FFF;text-decoration:none;}
-.m-sidebar .itm:hover{background:#C6C4C4;text-decoration:none;}
+.m-sidebar .itm{display:block;height:60px;line-height:60px;color:#2E2E2E;font-size:18px;background:#ECECEC;}
+.m-sidebar .itm.js-selected{background:#FFF;}
+.m-sidebar .itm:hover{background:#C6C4C4;}
+
+/* 右边容器 */
+.m-box .box_title{padding:15px 0;font-size:20px;font-weight:normal;text-align:left;color:#2E2E2E;font-weight:bold;}
+
+/* 右边容器里的tab */
+.m-tab{height:30px;line-height:30px;text-align:center;}
+.m-tab .itm{display:block;margin-right:20px;width:90px;border:1px solid #00A0E9;color:#00A0E9;background:#FFF;cursor:pointer;}
+.m-tab .itm:hover{background:#DBF4FF;}
+.m-tab .itm.js-selected{color:#FFF;background:#00A0E9;border-bottom-color:#fff;cursor:default;}
+.m-tab .itm.js-selected:hover{background:#00A0E9;}
+
+/* 右侧容器内布局 */
+.w-lyx .lyr{width:270px;margin-left:-270px;}
+.w-lyx .lym{margin-right:270px;padding-right:15px;}
+
+/* 列表行 */
+.m-row{line-height:24px;overflow:hidden;padding:10px;}
+.m-row:nth-child(odd){background:#fafafa;}
+.m-row a{font-size:16px;}
+.m-row .info span{margin-right:20px;color:#7B7B7B;}
+.m-row .operation a{margin-left:10px;}
+
+/* 右侧信息容器 */
+.m-info_block{line-height:20px;padding:10px;margin-bottom:20px;background:#FAFAFA;border:1px solid #F5F5F5;text-align:left;}
+.m-info_block .info_block_title{padding-bottom:5px;color:#7E7E7E;font-weight:bold;}
+.m-info_block .info_block_cnt{$clearfix();}
+.m-info_block .info_block_cnt .info_block_itm{background: #00A0E9;color: #fff;padding:0 7px;margin:0 10px 10px 0;border-radius: 10px;max-width:100px;display:block;float:left;$ellipsis();}
+.m-info_block .info_block_cnt .js-selected{background:#ECECEC;}
 
 .mdl-2 .pgr{padding:20px 0;text-align:center;}
-.w-bit{line-height:24px;border-bottom:1px dotted #D8E0E5;overflow:hidden;}
-.w-bit .inf span{margin-right:20px;color:#7B7B7B;}
-.w-bit .xat a{margin-left:10px;}
-
 .mdl-3 a{color:#21759B;}
 .mdl-3 .m3-t{padding:15px 0;}
 .mdl-3 .m3-t .sp{margin:0 8px;}
 .mdl-3 .m3-t .js-selected{color:#333;cursor:default;}
-.mdl-3 .m3-t .js-selected:hover{text-decoration:none;}
 .mdl-3 .m3-t .sbx,
 .mdl-3 .js-ntbx .tbx{display:none;}
 .mdl-3 .js-ntbx .sbx{display:block;}
@@ -70,7 +80,6 @@ html{overflow-y:scroll;}
 .w-atb{padding:10px 0;}
 .w-atb .sp{margin:0 10px;}
 .w-atb .js-selected{color:#333;cursor:default;}
-.w-atb .js-selected:hover{text-decoration:none;}
 
 .mdl-d .mtl{font-weight:bold;padding:5px 0;border-bottom:1px solid #BBBBBB;}
 .mdl-d .w-mtb td{border:0;}

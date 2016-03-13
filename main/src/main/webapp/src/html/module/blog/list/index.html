@@ -8,15 +8,15 @@
 <textarea name="jst" id="jst-2-blog-list">
   {list beg..end as y}
     {var x=xlist[y]}
-    <div class="w-bit">
+    <div class="m-row">
       <div class="f-cb">
         <p class="fl ztl"><a href="#" data-action="modal">${x.title}</a></p>
-        <div class="fr xat">
+        <div class="fr operation">
           <a href="#" data-action="modal">编辑</a>
           <a href="#" data-action="modal">删除</a>
         </div>
       </div>
-      <p class="inf">
+      <p class="info">
         <span>${x.updateTime|format:'yyyy-MM-dd HH:mm'}</span>
         <span>阅读(${x.read})</span>
         <span>评论(${x.comment})</span>
