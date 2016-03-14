@@ -1,7 +1,7 @@
 /**
- * 客服模块通用接口实现文件
+ * 通用接口实现文件
  *
- * @Author  genify
+ * @Author  hzxiejin
  */
 NEJ.define([
     'base/element',
