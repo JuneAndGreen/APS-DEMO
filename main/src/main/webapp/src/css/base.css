@@ -26,7 +26,7 @@ body{line-height:1.5;word-wrap:break-word;word-break:break-all;}
 .g-hd:after,.g-bd:after,.g-ft:after,.g-cols:after,.g-col:after,.g-cor:after{display:block;clear:both;visibility:hidden;height:0;content:".";}
 .g-hd,.g-bd,.g-ft,.g-cols,.g-col,.g-cor{zoom:1;}
 body{text-align:center;background:#333;}
-.g-doc{width:100%;margin:0 auto;text-align:left;}
+.g-doc{width:100%;margin:0 auto;text-align:left;height:100%;overflow-y:scroll;}
 .g-hd{padding:10px 20px 15px;}
 .g-bd{margin:0 0 10px;background:#fff;}
 .g-ft{padding:10px 0;}

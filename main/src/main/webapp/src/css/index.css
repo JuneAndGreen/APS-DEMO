@@ -1,19 +1,26 @@
 a{color:#21759b;}
 a:hover{text-decoration:none;}
-html{overflow-y:scroll;color:#2e2e2e;}
+html{color:#2e2e2e;}
+html,body{position:relative;height:100%;width:100%;}
+body{overflow-y:hidden;}
+.u-btn{padding:10px 40px;background:#00a0e9;color:#fff;border:none;border-radius:10px;outline:none;}
+.u-btn:hover{background:#42bff8;}
+.u-btn:active{background:#0c75a5;}
 .f-xcb{zoom:1;}
 .f-xcb:after{display:block;clear:both;visibility:hidden;height:0;content:".";}
 .f-xcb .fl{float:left;}
 .f-xcb .fr{float:right;}
-.w-mtb{width:100%;table-layout:fixed;border-collapse:collapse;}
-.w-mtb td{line-height:20px;padding:10px;border-bottom:1px dotted #bbb;vertical-align:top;}
+.w-mtb{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;}
+.w-mtb td{line-height:40px;height:40px;padding:15px;vertical-align:top;}
 .w-mtb .x td{border-bottom:0;}
 .w-mtb .c0{width:70px;text-align:right;}
 .w-mtb .c2{width:80px;}
-.w-mtb .wd0{width:260px;}
+.w-mtb .wd0{width:260px;height:40px;line-height:40px;padding:0 15px;border:1px solid #d7d4d4;}
+.w-mtb .wd0:focus{border:1px solid #00a0e9;outline:none;}
 .w-mtb .wd1{width:140px;}
-.w-mtb textarea{height:100px;}
-.w-mtb .btn{padding:5px 10px;}
+.w-mtb textarea.wd0{height:100px;height:80px;resize:none;}
+.w-mtb input[type="radio"]{margin-right:5px;}
+.w-mtb label{margin-right:20px;}
 .w-loading{height:300px;background:url("../../res/image/loading.gif") no-repeat center center;}
 .w-message{height:300px;line-height:300px;text-align:center;}
 #www-wd-com .w-pager .zbtn,#www-wd-com .w-pager .zpgi{border:0;}
@@ -28,10 +35,10 @@ html{overflow-y:scroll;color:#2e2e2e;}
 .m-tab{height:30px;line-height:30px;text-align:center;}
 .m-tab .itm{display:block;margin-right:20px;width:90px;border:1px solid #00a0e9;color:#00a0e9;background:#fff;cursor:pointer;}
 .m-tab .itm:hover{background:#dbf4ff;}
-.m-tab .itm.js-selected{color:#fff;background:#00a0e9;border-bottom-color:#fff;cursor:default;}
+.m-tab .itm.js-selected{color:#fff;background:#00a0e9;cursor:default;}
 .m-tab .itm.js-selected:hover{background:#00a0e9;}
 .w-lyx .lyr{width:270px;margin-left:-270px;}
-.w-lyx .lym{margin-right:270px;padding-right:15px;}
+.w-lyx .lym{margin-right:270px;padding:0 15px 15px 0;}
 .m-row{line-height:24px;overflow:hidden;padding:10px;}
 .m-row:nth-child(odd){background:#fafafa;}
 .m-row a{font-size:16px;}
@@ -51,7 +58,8 @@ html{overflow-y:scroll;color:#2e2e2e;}
 .mdl-3 .m3-t .sbx,.mdl-3 .js-ntbx .tbx{display:none;}
 .mdl-3 .js-ntbx .sbx{display:block;}
 .mdl-4{padding:20px 0;}
-.mdl-4 .lym .it{width:33%;line-height:24px;}
+.mdl-4 .lym .it{position:relative;width:27%;margin:0 3% 10px 0;padding:5px 10px;box-sizing:border-box;line-height:24px;background:#fafafa;}
+.mdl-4 .lym .it .up{float:right;}
 .mdl-4 .lym .sp{margin:0 10px;color:#a47ba4;}
 .w-atb{padding:10px 0;}
 .w-atb .sp{margin:0 10px;}
@@ -61,10 +69,20 @@ html{overflow-y:scroll;color:#2e2e2e;}
 .mdl-e{padding-bottom:30px;}
 .mdl-e .jat input{margin-left:20px;padding:5px 10px;}
 .w-jlk{margin:15px 0;}
+.w-jlk input[type="radio"]{margin-right:5px;}
+.w-jlk select{margin-left:10px;}
 .w-jlk .jtl{padding:5px 20px;border-bottom:1px solid #bbb;font-weight:bold;}
 .w-jlk .jbx{padding:10px 20px;}
-.w-jlk .jbx p{margin:5px 0;}
+.w-jlk .jbx p{margin:5px 0;height:30px;line-height:30px;}
+.jat{margin-left:20px;}
 .m-logo{float:right;width:185px;height:40px;margin-right:0;overflow:hidden;text-indent:-2000px;background-position:0 0;}
 .m-title{color:#fff;font-size:34px;line-height:40px;margin-left:0;}
 .m-foot{text-align:center;color:#666;height:40px;line-height:40px;}
 .m-foot a{margin:0 3px;}
+.m-modal{position:absolute;top:0;left:0;right:0;bottom:0;}
+.m-modal .mask{position:absolute;top:0;left:0;right:0;bottom:0;background:#000;opacity:0.5;filter:alpha(opacity = 50);}
+.m-modal .alert{width:400px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;border-radius:5px;}
+.m-modal .alert_info{padding:40px;font-size:16px;text-align:left;}
+.m-modal .alert_btn{padding:20px;zoom:1;}
+.m-modal .alert_btn:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.m-modal .alert_btn button{float:right;}

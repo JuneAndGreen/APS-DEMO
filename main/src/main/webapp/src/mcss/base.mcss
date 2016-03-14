@@ -36,7 +36,7 @@ body{line-height:1.5;word-wrap:break-word;word-break:break-all;}
 
 /* grids */
 body{text-align:center;background:#333;}
-.g-doc{width:100%;margin:0 auto;text-align:left;}
+.g-doc{width:100%;margin:0 auto;text-align:left;height:100%;overflow-y:scroll;}
 .g-hd{padding:10px 20px 15px;}
 .g-bd{margin:0 0 10px;background:#fff;}
 .g-ft{padding:10px 0;}

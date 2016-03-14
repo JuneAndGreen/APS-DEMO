@@ -6,8 +6,9 @@
 NEJ.define([
     'base/element',
     'base/event',
-    'base/util'
-],function(e,v,u,p){
+    'base/util',
+    'util/template/tpl'
+],function(e,v,u,tpl,p){
     /**
      * 代理容器点击行为
      * @param  {Object} scope  - 作用域
@@ -36,7 +37,25 @@ NEJ.define([
      * 弹窗
      */
     p._$modal = function(){
-        alert('目前暂未支持此功能');
+        var modal = window.modal;
+        if(!modal) {
+            modal = e._$create('div', 'm-modal f-dn', document.body);
+            modal.innerHTML = '<div class="mask"></div>\
+            <div class="alert">\
+                <div class="alert_info">目前暂未支持此功能</div>\
+                <div class="alert_btn">\
+                    <button class="u-btn" data-action="close" type="button">关闭</button>\
+                </div>\
+            </div>';
+            window.modal = modal;
+            p._$delegate(window, modal, {
+                close: function() {
+                    e._$addClassName(modal, 'f-dn');
+                }
+            });
+        }
+
+        e._$delClassName(modal, 'f-dn');
     };
 
 });
