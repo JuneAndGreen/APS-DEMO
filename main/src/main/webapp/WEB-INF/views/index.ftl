@@ -20,22 +20,22 @@
     <#noparse>
     <div class="g-doc">
       <div class="g-hd">
-        <h1 class="m-logo">网易-杭研院-网易有范</h1>
-        <h2 class="m-title">网易有范</h2>
+        <h1 class="m-logo">xxx</h1>
+        <h2 class="m-title">xxx</h2>
       </div>
       <div class="g-bd" id="module-box"></div>
       <div class="g-bd">
         <div class="m-foot">
-            如有任何问题，请联系：蔡剑飞(<a href="mailto:caijf@corp.netease.com">caijf@corp.netease.com</a>)
+            如有任何问题，请联系：xxx(<a href="mailto:xxx">xxx</a>)
         </div>
       </div>
       <div class="g-ft">
         <div class="m-foot">
-            &nbsp;&copy;&nbsp;网易-杭研院-网易有范
+            &nbsp;&copy;&nbsp;xxx
         </div>
       </div>
     </div>
-    
+
     <div id="template-box" style="display:none;">
       <!-- @TEMPLATE -->
       <textarea name="html" data-src="module/tab/index.html"></textarea>
@@ -129,7 +129,7 @@
                         }
                     },
                     '/m/blog/tag/':'module/blog/tag/index.html',
-                    
+
                     '/m/setting':{
                         module:'module/layout/setting/index.html',
                         composite:{
